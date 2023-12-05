@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lessons">
+
+    <TextView
+        android:id="@+id/textViewBasics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="80dp"
+        android:text="The Basics"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewGreetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="Greetings:\nHola - Hello\nBuenos días - Good morning\nBuenas tardes - Good afternoon\nBuenas noches - Good evening/night"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBasics" />
+
+    <TextView
+        android:id="@+id/textViewIntroducingYourself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introducing Yourself:\nMe llamo [Name] - My name is [Name]\nSoy [Name] - I am [Name]\nMucho gusto - Nice to meet you\nEncantado/a (for men/women) - Delighted/Pleased to meet you"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewGreetings"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numbers"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/textViewIntroducingYourself"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewNumbersLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numbers Lesson:\nUno - One\nDos - Two\nTres - Three\nCuatro - Four\nCinco - Five\nSeis - Six\nSiete - Seven\nOcho - Eight\nNueve - Nine\nDiez - Ten"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/textViewNumbers"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/buttonPlayNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Numbers"
+        app:layout_constraintTop_toBottomOf="@id/textViewNumbersLesson"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="157dp"
+        android:layout_height="51dp"
+        android:text="Lessons"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+</androidx.constraintlayout.widget.ConstraintLayout>
