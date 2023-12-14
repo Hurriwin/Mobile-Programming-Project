@@ -13,6 +13,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="80dp"
         android:text="The Basics"
+        android:textAlignment="viewStart"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -84,4 +85,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="140dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Colors"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumbersLesson" />
+
+    <TextView
+        android:id="@+id/textViewColorsLesson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rojo - Red\nAzul - Blue\nVerde - Green\nAmarillo - Yellow\nNegro - Black\nBlanco - White"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

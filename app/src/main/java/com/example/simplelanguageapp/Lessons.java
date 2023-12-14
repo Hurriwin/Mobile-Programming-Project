@@ -38,6 +38,18 @@ public class Lessons extends AppCompatActivity {
         });
 
         playNumbersButton.setOnClickListener(v -> playNumbersSound());
+
+        TextView colorsText = findViewById(R.id.textView3);
+        TextView colorsLessonText = findViewById(R.id.textViewColorsLesson);
+        colorsLessonText.setVisibility(View.GONE);
+
+        colorsText.setOnClickListener(v -> {
+            if (colorsLessonText.getVisibility() == View.VISIBLE) {
+                colorsLessonText.setVisibility(View.GONE);
+            } else {
+                colorsLessonText.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     private void toggleVisibility(TextView textView) {
@@ -47,6 +59,7 @@ public class Lessons extends AppCompatActivity {
             textView.setVisibility(View.VISIBLE);
         }
     }
+
 
     private void playNumbersSound() {
         if (mediaPlayer != null) {
